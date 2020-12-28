@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>My First Bootstrap Website</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<link href="style.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://m.w3newbie.com/you-tube.css">
+</head>
+<body>
+
+<!-- Navigation -->
+
+<nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
+<div class="container-fluid">
+    <a class="navbar-brand" href="#"><img src="images/LogoWeb.png" style="height: 40%;width: 40%;"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="#About">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#OurServices">Services</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="#OurTeam">Team</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="#OurConnect">Connect</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" data-toggle="modal" data-target="#staticBackdrop">Login</a>
+             </li>
+             <li class="nav-item">
+                <a class="nav-link" data-toggle="modal" data-target="#staticBackdrop2">Register</a>
+             </li>                             
+        </ul>
+    </div>
+</div>
+</nav>
+<!-- Modal Login -->
+<div class="modal fade" id="staticBackdrop" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Login Form</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <div class="wrapper fadeInDown">
+                <div id="formContent">
+                  <!-- Login Form -->
+                  <form>
+                    <input type="text" id="login" class="fadeIn second" name="login" placeholder="User Name">
+                    <br>
+                    <br>
+                    <input type="password" id="password" class="fadeIn third" name="login" placeholder="Password">
+                  </form>
+                     <!-- Remind Passowrd -->
+                   <br>
+                  <div id="formFooter">
+                    <a class="underlineHover" href="#">Forgot Password?</a>
+                  </div>
+              
+                </div>
+              </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Login</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal Register -->
+<div class="modal fade" id="staticBackdrop2" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Register Form</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <div class="wrapper fadeInDown">
+                <div id="formContent">
+                  <!-- Register Form -->
+                  <form>
+                    <input type="text" id="login" class="fadeIn second" name="login" placeholder="User Name">
+                    <br>
+                    <br>
+                    <input type="text" id="login" class="fadeIn second" name="login" placeholder="email@myemail.com">
+                    <br>
+                    <br>
+                    <input type="password" id="password" class="fadeIn third" name="login" placeholder="Password">
+                    <br>
+                    <br>
+                    <input type="text" id="rePassword" class="fadeIn third" name="login" placeholder="Repeat Password">
+                  </form>
+                </div>
+              </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Register</button>
+        </div>
+      </div>
+    </div>
+  </div>
+<!--- Image Slider -->
+<div id="slides" class="carousel slide" data-ride="carousel">
+    <ul class="carousel-indicators" >
+      <li data-target="#slides" data-slide-to="0" class="active"style="background-color:black"></li>
+      <li data-target="#slides" data-slide-to="1"style="background-color:black"></li>
+      <li data-target="#slides" data-slide-to="2"style="background-color:black"></li>
+    </ul>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/Backgound1.jpg">
+        </div>
+        <div class="carousel-item">
+            <img src="images/Backgound2.jpg">
+        </div>
+        <div class="carousel-item">
+            <img src="images/Backgound3.jpg">
+        </div>
+    </div>
+</div>
+
+<!--- Jumbotron -->
+<div class="container-fluid">
+    <div class="row junbotron">
+        <div class="col-xs-12 col-sm col-md-12 col-lg-9 col-xl-10">
+            <p class="lead">Phudit allows you to buy the best types of makeup and You buy the best makeup and also reserve makeup artists for any happy occasion with you </p>
+        </div>
+       <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-2">
+            <a href="#"><button type="button" class="btn btn-outline-secondary btn-lg">Our Make Up</button></a>
+       </div> 
+    </div>
+</div>
+
+<!--- Welcome Section -->
+<div class="container-fluid padding">
+    <div class="row welcome text-center">
+        <div class="col-12">
+            <h1 class="display-4">Our Offers</h1>
+        </div>
+        <hr>
+        <div class="col-12">
+          <p class="lead">Welcome to Our website Make Up! 
+            You can find what you want at the lowest prices and the highest quality
+              </p>
+        </div>
+    </div>
+</div>
+
+<!--- Three Column Section -->
+<div class="container-fluid padding">
+    <div class="row text-center padding">
+        <div class="col-xs-12 col-sm-6 col-md-4">
+          <i class="fas fa-box"></i>
+            <h3>First Offer</h3>
+            <p class="lead">50% discount on all products from Jumia</p>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4">
+            <i class="fas fa-boxes"></i>
+            <h3>Second Offer</h3>
+            <p class="lead">20% discount on all products from IHerb</p>
+        </div>
+        <div class="col-sm-12 col-md-4">
+            <i class="fas fa-gift"></i>
+            <h3>Third Offer</h3>
+            <p class="lead">30% discount on all products from Perfume</p>
+        </div>
+    </div>
+    <hr class="my-4">
+</div>
+
+<!--- Two Column Section -->
+<div class="container-fluid padding">
+    <div class="row padding">
+      <div class="col-lg-6">
+          <h2>If you buy it...</h2>
+          <p>You must view all products and choose the one suitable for you.</p>
+          <p>Then, you must also choose the appropriate choice for our offers that are presented through the page.</p>
+          <br>
+          <a href="#" class="btn btn-primary">Order Now</a>       
+      </div>
+      <div class="col-lg-6">
+        <img src="images/desk.png" class="img-fluid" style="height: 100%;width: 100%;">
+      </div>
+    </div>
+</div>
+ <hr class="my-4">
+<!--- Meet the team -->
+<div class="container-fluid padding">
+  <div class="row welcome text-center">
+      <div class="col-12" id="OurTeam">
+          <h1 class="display-4">Meet the Team</h1>
+      </div>
+      <hr>
+  </div>
+</div>
+<!--- Cards -->
+<div class="container-fluid padding">
+    <div class="row padding">
+        <div class="col-md-4">
+            <div class="card">
+                <img class="card-imd-top" src="images/team1.png" style="height: 100%;width: 100%;">
+                <div class="card-body">
+                    <h4 class="card-title">Charlotte Tillbury</h4>
+                    <p class="card-text">Charlotte is a make up artist with  20 years of experinence.</p>
+                    <a href="#" class="btn btn-outline-secondary">See Profile</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img class="card-imd-top" src="images/team2.png" style="height: 100%;width: 100%;">
+                <div class="card-body">
+                    <h4 class="card-title">Mary Jo</h4>
+                    <p class="card-text">Mary is a make up artist with almost 10 years of experience.</p>
+                    <a href="#" class="btn btn-outline-secondary">See Profile</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <img class="card-imd-top" src="images/team3.png" style="height: 100%;width: 100%;">
+                <div class="card-body">
+                    <h4 class="card-title">Popy Paraon</h4>
+                    <p class="card-text">Popy is a make up artist with almost 5 years of experience. </p>
+                    <a href="#" class="btn btn-outline-secondary">See Profile</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--- Two Column Section -->
+<div class="container-fluid padding">
+    <div class="row padding">
+      <div class="col-lg-6" id="About">
+          <h2>Our Work</h2>
+         <p>You must view all products and choose the one suitable for you.</p>
+          <p>Then, you must also choose the appropriate choice for our offers that are presented through the page.</p>
+          <p> You can find what you want at the lowest prices and the highest quality</p>
+          <br>       
+      </div>
+      <div class="col-lg-6">
+        <img src="images/bootstrap2.png" class="img-fluid">
+      </div>
+    </div>
+    <hr class="my-4">
+</div>
+
+<!--- Connect -->
+<div class="container-fluid padding">
+    <div class="row text-center padding">
+        <div class="col-12" id="OurConnect">
+            <h2>Connect</h2>
+        </div>
+        <div class="col-12 social padding">
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-google-plus-g"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+
+        </div>
+    </div>
+</div>
+
+<!--- Footer -->
+<footer>
+   <div class="container-fluid padding">
+       <div class="row text-center">
+           <div class="col-md-4">
+               <img src="images/LogoWeb.png" style="height: 30%;width: 40%;">
+               <hr class="light">
+               <p>555-555-5555</p>
+               <p>email@myemail.com</p>
+               <p>10 Street Name</p>
+               <p>City, State,00000</p>
+           </div>
+           <div class="col-md-4">
+               <hr class="light">
+               <h5>Our Hours</h5>
+               <hr class="light">
+               <p>Monday:9am-5pm</p>
+               <p>Saturday:10am-4pm</p>
+               <p>Sunday:closed</p>
+           </div>
+           <div class="col-md-4" id="OurServices">
+                <hr class="light">
+                <h5>Services Area</h5>
+                <hr class="light">
+                <p>City, State,00000</p>
+                <p>City, State,00000</p>
+                <p>City, State,00000</p>
+                <p>City, State,00000</p>
+           </div>
+           <div class="col-12">
+               <hr class="light-100">
+               <h5>&copy; Phudit.com</h5>
+
+           </div>
+       </div>
+   </div> 
+</footer>
+
+
+
+</body>
+</html>
